@@ -22,6 +22,7 @@ while True:
         else:
             
             break
+
     else:
         
         if pointer > K-1:
