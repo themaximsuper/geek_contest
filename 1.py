@@ -1,3 +1,3 @@
-A, B, C, D = [int(input()) for i in range(4)]
+a, b, c, d = [int(input()) for i in range(4)]
 
-print(A+B*B*C*D)
+print(a + b * b * c * d)

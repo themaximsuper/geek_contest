@@ -1,6 +1,6 @@
-N, K = map(int, input().split())
+n, k = map(int, input().split())
 
-start_point = [num for num in range(K, 0, -1)]
+start_point = [num for num in range(k, 0, -1)]
 flag = True
 pointer = 0
 
@@ -13,7 +13,7 @@ while True:
 
     if pointer == 0:
         
-        if start_point[0] < N:
+        if start_point[0] < n:
             
             start_point[0] += 1
             pointer = 1
@@ -25,9 +25,9 @@ while True:
 
     else:
         
-        if pointer > K - 1:
+        if pointer > k - 1:
             
-            pointer = K - 1
+            pointer = k - 1
             
         if start_point[pointer] < start_point[pointer - 1] - 1:
             
@@ -37,5 +37,5 @@ while True:
             
         else:
             
-            start_point[pointer] = K - pointer
+            start_point[pointer] = k - pointer
             pointer -= 1

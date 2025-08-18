@@ -1,9 +1,9 @@
-N, K, M = map(int, input().split())
+n, k, m = map(int, input().split())
 
-stations_statuses = [K for station in range(N)]
+stations_statuses = [k for station in range(n)]
 output = []
 
-for request in range(M):
+for request in range(m):
     
     x, y = map(int, input().split())
     
