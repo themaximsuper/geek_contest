@@ -21,7 +21,7 @@ int main () {
         }else {
 
             if (has_y == 0) {
-                word_length += 1;
+                word_length ++;
                 
                 if (max_length < word_length) {
                     max_length = word_length;

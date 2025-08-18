@@ -25,9 +25,9 @@ while True:
 
     else:
         
-        if pointer > K-1:
+        if pointer > K - 1:
             
-            pointer = K-1
+            pointer = K - 1
             
         if start_point[pointer] < start_point[pointer - 1] - 1:
             
