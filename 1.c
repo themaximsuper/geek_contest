@@ -7,7 +7,7 @@ int main () {
     char output[21]; 
     sprintf(output, "%lld", A+B*B*C*D);
 
-    printf("%s\n", output);
+    printf("%s", output);
     
     return 0;
 }
