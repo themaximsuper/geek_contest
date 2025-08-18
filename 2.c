@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main () {
-    unsigned short max_length;
+    short max_length;
 
     short has_y;
-    unsigned short word_length;
+    short word_length;
 
     char string[10000];
     fgets(string, 10000, stdin);
 
-    for (int index = 0; index < sizeof(string)/8; index++) {
+    for (short index = 0; index < sizeof(string) / 8; index ++) {
     
         if (string[index] == '?') {
             break;
@@ -33,7 +33,7 @@ int main () {
 
     }
 
-    printf("%hu", max_length);
+    printf("%hi", max_length);
 
     return 0;
 }
