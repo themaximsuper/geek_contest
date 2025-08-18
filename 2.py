@@ -1,4 +1,6 @@
-for el in sorted(input().rstrip("?").split(" "), key=lambda x: len(x), reverse=True):
-    if "Y" not in el:
-        print(len(el))
+for word in sorted(input().rstrip("?").split(" "), key=lambda word: len(word), reverse=True):
+    
+    if "Y" not in word:
+        
+        print(len(word))
         break

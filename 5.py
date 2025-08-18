@@ -1,22 +1,22 @@
 N, K = map(int, input().split())
 
-m = [i for i in range(K, 0, -1)]
+start_point = [num for num in range(K, 0, -1)]
 flag = True
-p = 0
+pointer = 0
 
 while True:
     
     if flag:
         
-        print(" ".join([str(el) for el in m]))
+        print(" ".join([str(num) for num in start_point]))
         flag = False
 
-    if p == 0:
+    if pointer == 0:
         
-        if m[0] < N:
+        if start_point[0] < N:
             
-            m[0] += 1
-            p = 1
+            start_point[0] += 1
+            pointer = 1
             flag = True
             
         else:
@@ -24,17 +24,17 @@ while True:
             break
     else:
         
-        if p > K-1:
+        if pointer > K-1:
             
-            p = K-1
+            pointer = K-1
             
-        if m[p] < m[p - 1] - 1:
+        if start_point[pointer] < start_point[pointer - 1] - 1:
             
-            m[p] += 1
-            p += 1
+            start_point[pointer] += 1
+            pointer += 1
             flag = True
             
         else:
             
-            m[p] = K - p
-            p -= 1
+            start_point[pointer] = K - pointer
+            pointer -= 1
